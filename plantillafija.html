@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>960 Grid System - Ejercicio Plantilla Fija</title>
+
+    <!-- 960 Grid System CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/960gs/0/960.css"
+    />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #1a3a52;
+        padding: 20px 0;
+        min-height: 100vh;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        background-color: transparent;
+        padding: 20px;
+        margin: 0 0 30px 0;
+      }
+
+      h2 {
+        text-align: center;
+        color: #666;
+        margin: 30px 0 20px 0;
+        font-size: 24px;
+      }
+
+      .box {
+        background-color: transparent;
+        border: 1px solid #999;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #666;
+        min-height: 40px;
+        box-sizing: border-box;
+      }
+
+      .container_12 {
+        background-color: white;
+        background-image: repeating-linear-gradient(
+          to right,
+          transparent 0px,
+          transparent 10px,
+          rgba(255, 192, 203, 0.3) 10px,
+          rgba(255, 192, 203, 0.3) 70px,
+          transparent 70px,
+          transparent 80px
+        );
+        padding: 20px 0;
+        margin-bottom: 20px;
+      }
+
+      .container_16 {
+        background-color: white;
+        background-image: repeating-linear-gradient(
+          to right,
+          transparent 0px,
+          transparent 10px,
+          rgba(255, 192, 203, 0.3) 10px,
+          rgba(255, 192, 203, 0.3) 50px,
+          transparent 50px,
+          transparent 60px
+        );
+        padding: 20px 0;
+      }
+
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>960 Grid System</h1>
+
+    <div class="container_12">
+      <h2>12 Column Grid</h2>
+
+      <!-- Row 1: grid_12 (940px) - Full width -->
+      <div class="grid_12">
+        <div class="box">940</div>
+      </div>
+      <div class="clear"></div>
+
+      <!-- Row 2: grid_1 (60px) + grid_11 (900px) -->
+      <div class="grid_1">
+        <div class="box">60</div>
+      </div>
+      <div class="grid_11">
+        <div class="box">900</div>
+      </div>
+      <div class="clear"></div>
+
+      <!-- Row 3: grid_2 (140px) + grid_10 (780px) -->
+      <div class="grid_2">
+        <div class="box">140</div>
+      </div>
+      <div class="grid_10">
+        <div class="box">780</div>
+      </div>
+      <div class="clear"></div>
+
+      <!-- Row 4: grid_3 (220px) + grid_9 (700px) -->
+      <div class="grid_3">
+        <div class="box">220</div>
+      </div>
+      <div class="grid_9">
+        <div class="box">700</div>
+      </div>
+      <div class="clear"></div>
+
+      <!-- Row 5: grid_4 (300px) + grid_8 (620px) -->
+      <div class="grid_4">
+        <div class="box">300</div>
+      </div>
+      <div class="grid_8">
+        <div class="box">620</div>
+      </div>
+      <div class="clear"></div>
+
+      <!-- Row 6: grid_5 (380px) + grid_7 (540px) -->
+      <div class="grid_5">
+        <div class="box">380</div>
+      </div>
+      <div class="grid_7">
+        <div class="box">540</div>
+      </div>
+      <div class="clear"></div>
+
+      <!-- Row 7: grid_6 (460px) + grid_6 (460px) -->
+      <div class="grid_6">
+        <div class="box">460</div>
+      </div>
+      <div class="grid_6">
+        <div class="box">460</div>
+      </div>
+      <div class="clear"></div>
+
+      <!-- Diagonal staircase pattern -->
+      <div class="grid_1">
+        <div class="box">60</div>
+      </div>
+      <div class="clear"></div>
+
+      <div class="grid_1 prefix_1">
+        <div class="box">60</div>
+      </div>
+      <div class="clear"></div>
+
+      <div class="grid_1 prefix_2">
+        <div class="box">60</div>
+      </div>
+      <div class="clear"></div>
+
+      <div class="grid_1 prefix_3">
+        <div class="box">60</div>
+      </div>
+      <div class="clear"></div>
+
+      <div class="grid_1 prefix_4">
+        <div class="box">60</div>
+      </div>
+      <div class="clear"></div>
+
+      <div class="grid_1 prefix_5">
+        <div class="box">60</div>
+      </div>
+      <div class="clear"></div>
+
+      <div class="grid_1 prefix_6">
+        <div class="box">60</div>
+      </div>
+      <div class="clear"></div>
+
+      <div class="grid_1 prefix_7">
+        <div class="box">60</div>
+      </div>
+      <div class="clear"></div>
+
+      <div class="grid_1 prefix_8">
+        <div class="box">60</div>
+      </div>
+      <div class="clear"></div>
+
+      <div class="grid_1 prefix_9">
+        <div class="box">60</div>
+      </div>
+      <div class="clear"></div>
+
+      <div class="grid_1 prefix_10">
+        <div class="box">60</div>
+      </div>
+      <div class="clear"></div>
+
+      <!-- Mixed layouts at bottom -->
+      <div class="grid_3">
+        <div class="box">220</div>
+      </div>
+      <div class="grid_3">
+        <div class="box">220</div>
+      </div>
+      <div class="grid_1">
+        <div class="box">60</div>
+      </div>
+      <div class="grid_5">
+        <div class="box">380</div>
+      </div>
+      <div class="clear"></div>
+
+      <div class="grid_1">
+        <div class="box">60</div>
+      </div>
+      <div class="grid_5">
+        <div class="box">380</div>
+      </div>
+      <div class="grid_3">
+        <div class="box">220</div>
+      </div>
+      <div class="grid_3">
+        <div class="box">220</div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    <div class="container_16">
+      <h2>16 Column Grid</h2>
+    </div>
+  </body>
+</html>
